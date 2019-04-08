@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#fff"
+    android:id="@+id/linear"
+    tools:context=".ChattingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="bottom"
+        android:background="@drawable/edittext"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/msgSendText"
+            android:layout_width="280dp"
+            android:padding="10dp"
+            android:textColor="#4d4949"
+            android:background="@drawable/edittext"
+            android:layout_height="match_parent"
+            android:hint="Type Your Message Here .."/>
+
+        <ImageView
+            android:padding="2dp"
+            android:id="@+id/send_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="2dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_send_blackh_24dp" />
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>
